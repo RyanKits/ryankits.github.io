@@ -6,13 +6,24 @@
   
   <title>Ryan Kits Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="抓包工具：wireshark 通过ping百度得到IP地址，从新打开浏览器，输入百度的链接， 设置filter： 1tcp and ip.addr&#x3D;&#x3D;36.152.44.95     第一次握手这里已经成功抓到了tcp的握手。先来分析第一个：  可以看到客户端给服务器的第一次握手： Seq：3006456091，这里有两个seq，后续分析。 flags中的Syn标志位被设置为1。 第二次握手 来看">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Ryan Kits Notes">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2023/06/08/tcpip3%E6%AC%A1%E6%8F%A1%E6%89%8B%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/index.html">
 <meta property="og:site_name" content="Ryan Kits Notes">
+<meta property="og:description" content="抓包工具：wireshark 通过ping百度得到IP地址，从新打开浏览器，输入百度的链接， 设置filter： 1tcp and ip.addr&#x3D;&#x3D;36.152.44.95     第一次握手这里已经成功抓到了tcp的握手。先来分析第一个：  可以看到客户端给服务器的第一次握手： Seq：3006456091，这里有两个seq，后续分析。 flags中的Syn标志位被设置为1。 第二次握手 来看">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/assets/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E6%8A%93%E5%8C%85%E6%A6%82%E8%A7%88.png">
+<meta property="og:image" content="http://example.com/assets/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E6%8A%93%E5%8C%85-%E7%AC%AC%E4%B8%80%E6%AC%A1.png">
+<meta property="og:image" content="http://example.com/assets/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E6%8A%93%E5%8C%85-%E7%AC%AC%E4%BA%8C%E6%AC%A11.png">
+<meta property="og:image" content="http://example.com/assets/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E6%8A%93%E5%8C%85-%E7%AC%AC%E4%BA%8C%E6%AC%A12.png">
+<meta property="og:image" content="http://example.com/assets/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E6%8A%93%E5%8C%85-%E7%AC%AC%E4%B8%89%E6%AC%A11.png">
+<meta property="og:image" content="http://example.com/assets/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E6%8A%93%E5%8C%85-%E7%AC%AC%E4%B8%89%E6%AC%A12.png">
+<meta property="article:published_time" content="2023-06-08T11:36:47.027Z">
+<meta property="article:modified_time" content="2023-06-02T02:49:31.983Z">
 <meta property="article:author" content="Ryan Kits">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E6%8A%93%E5%8C%85%E6%A6%82%E8%A7%88.png">
   
     <link rel="alternate" href="/atom.xml" title="Ryan Kits Notes" type="application/atom+xml">
   
@@ -71,9 +82,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-tcpip3次握手抓包分析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-tcpip3次握手抓包分析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/06/08/tcpip3%E6%AC%A1%E6%8F%A1%E6%89%8B%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/" class="article-date">
   <time class="dt-published" datetime="2023-06-08T11:36:47.027Z" itemprop="datePublished">2023-06-08</time>
@@ -126,102 +135,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Android开发问题收集" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/06/08/Android%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/" class="article-date">
-  <time class="dt-published" datetime="2023-06-08T11:31:15.836Z" itemprop="datePublished">2023-06-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/06/08/Android%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/">Android开发问题收集</a>
-    </h1>
+    <a href="/2023/06/08/Android%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Android开发问题收集</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="finalize-time-out"><a href="#finalize-time-out" class="headerlink" title="finalize time out"></a>finalize time out</h3><p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000019373275">android - 江义旺：滴滴出行安卓端 finalize time out 的解决方案_个人文章 - SegmentFault 思否</a></p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/longlong2015/article/details/88826234">Android踩坑经验-Finalize TimeoutException原因及解决方案_longlong2015的博客-CSDN博客</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/06/08/Android%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/" data-id="clin2dzk30000g06xhi1hh8gz" data-title="Android开发问题收集" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/06/08/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-06-08T11:14:53.424Z" itemprop="datePublished">2023-06-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/06/08/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/06/08/hello-world/" data-id="clin2dzkc0001g06x4qda8cdy" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
